@@ -1,38 +1,23 @@
-.App {
+.contenedor{
+  /* a un contenedor (el elemento padre), los elementos secundarios dentro del contenedor 
+  se organizan automáticamente en una línea y se pueden distribuir y alinear de manera flexible. */
+  display: flex;
+  /*divide el espacio sobrante de manera uniforme entre los elementos secundarios 
+  y crea un margen igual en ambos extremos del contenedor. */
+  justify-content: space-evenly;
+}
+.caja{
+  width: 30%;
+  background-color: gold;
+  /*para los bordes de div*/
+  border-radius: 12px;
+  border: 1px solid black;
+  /* para la fuente/letra */
+  font-size: 2em;
+  color: black;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*para que la imagen se adapten al ancho de la caja*/
+img{
+  width:100%;
 }
