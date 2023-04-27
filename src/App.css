@@ -16,11 +16,15 @@
   font-size: 2em;
   color: black;
   text-align: center;
+  
+  user-select: none;
 }
 /*para que la imagen se adapten al ancho de la caja*/
 img{
   width:100%;
 }
-.caja{
-  user-select: none;
+.cajaCentral{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }

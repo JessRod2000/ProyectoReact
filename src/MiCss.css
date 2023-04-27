@@ -1,0 +1,17 @@
+h1{
+    font-size: 2rem;
+    text-align: left;
+    color: white;
+}
+span{
+    font-size: 10px;
+    display: block;
+    color: white;
+    text-align: left;
+}
+.cajaRey{
+    padding: 2px 15px 20px;
+    margin-bottom: 10px;
+    width: 47%;
+    box-sizing: border-box;
+}
