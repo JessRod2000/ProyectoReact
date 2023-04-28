@@ -1,30 +1,30 @@
-.contenedor{
-  /* a un contenedor (el elemento padre), los elementos secundarios dentro del contenedor 
-  se organizan automáticamente en una línea y se pueden distribuir y alinear de manera flexible. */
-  display: flex;
-  /*divide el espacio sobrante de manera uniforme entre los elementos secundarios 
-  y crea un margen igual en ambos extremos del contenedor. */
-  justify-content: space-evenly;
+body{
+    margin: 20px;
+}
+.nombre{
+    color: red;
 }
 .caja{
-  width: 30%;
-  background-color: gold;
-  /*para los bordes de div*/
-  border-radius: 12px;
-  border: 1px solid black;
-  /* para la fuente/letra */
-  font-size: 2em;
-  color: black;
-  text-align: center;
-  
-  user-select: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    /* Borrar en caso de GRID
+    width: 22%;*/
+    padding: 2px 15px 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
 }
-/*para que la imagen se adapten al ancho de la caja*/
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    grid-column-gap: 10px;
+}
 img{
-  width:100%;
+    width: 100%;
 }
-.cajaCentral{
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+h1{
+    width: 100%;
+}
+.numero{
+    user-select: none;
+    font-size: 2rem;
 }

@@ -1,0 +1,30 @@
+.contenedor{
+  /* a un contenedor (el elemento padre), los elementos secundarios dentro del contenedor 
+  se organizan automáticamente en una línea y se pueden distribuir y alinear de manera flexible. */
+  display: flex;
+  /*divide el espacio sobrante de manera uniforme entre los elementos secundarios 
+  y crea un margen igual en ambos extremos del contenedor. */
+  justify-content: space-evenly;
+}
+.caja{
+  width: 30%;
+  background-color: gold;
+  /*para los bordes de div*/
+  border-radius: 12px;
+  border: 1px solid black;
+  /* para la fuente/letra */
+  font-size: 2em;
+  color: black;
+  text-align: center;
+  
+  user-select: none;
+}
+/*para que la imagen se adapten al ancho de la caja*/
+img{
+  width:100%;
+}
+.cajaCentral{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
